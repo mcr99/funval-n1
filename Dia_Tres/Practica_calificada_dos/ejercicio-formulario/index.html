@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <script src="./src/scripts/script.js" defer></script>
+    <title>Ejercicio Formulario</title>
+</head>
+<body>
+    <h1>Registro de Productos</h1>
+    <br>
+    <form id="productForm" action="src/scripts/script.js" method="post">
+        <label for="name">Nombre del Producto:</label> <br>
+        <input type="text" id="name" name="name" autocomplete="name">
+        <br>
+        <label for="price">Precio:</label> <br>
+        <input type="number" id="price" name="price" autocomplete="transaction-amount" min="0">
+        <br>
+        <label for="category">Categoria:</label> <br>
+        <select name="category" id="category">
+            <option value="">--Selecciona una Opcion --</option>
+            <option value="1">Categoria 1</option>
+            <option value="2">Categoria 2</option>
+            <option value="3">Categoria 3</option>
+            <option value="4">Categoria 4</option>
+            <option value="5">Categoria 5</option>
+        </select>
+        <br>
+        <label for="description">Descripcion:</label> <br>
+        <textarea name="description" id="description"></textarea>
+        <br>
+        <button>Agregar Producto</button>
+    </form>
+    <br>
+    <table id="productTableBody">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Descripcion</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
