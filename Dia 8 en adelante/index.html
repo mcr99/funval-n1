@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>my-project</title>
+  </head>
+<!--
+  <body class="bg-slate-300 flex justify-center items-center w-screen h-screen">
+    <main class="text-[15px] bg-white p-5 rounded-2xl w-[60vw] sm:w-[50vw] md:w-[40vw]">
+      <img class="rounded-2xl mb-6" src="images/image-qr-code.png" alt="QR">
+      <h1 class="font-bold text-center">Improve your front-end skills by building projects</h1>
+      <p class="text-center">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </main> 
+  </body>
+-->
+<!--
+  <body class="bg-[#f5d04e] flex justify-center items-center w-screen h-screen">
+    <main class="bg-white w-[40vw] h-[50vh] rounded-2xl border shadow-[10px_10px_rgba(0,0,0,1)]">
+        <img class="rounded-2xl mx-auto w-[35vw] mt-[2.4vh]" src="images/screen.png" alt=" Imagen de fondo ">
+      <section class="p-6">
+        <p class="bg-[#f5d04e] font-bold w-20 text-center rounded-sm p-0.5">Learning</p>
+        <p class="my-2 text-xs font-bold">Published 21 Dec 2023</p>
+        <h1 class="font-bold text-lg">HTML & CSS foundations</h1>
+        <p class="text-sm text-slate-700">These languages are the backbone of every website, defining structure, content and presentation</p>
+        <footer class="flex items-center mt-5">
+          <img class="" src="images/person.png" alt="Persona">
+          <p class="font-bold ml-2">Greg Hooper</p>
+        </footer>
+
+      </section>
+    </main>
+  </body>
+-->
+
+<!-- Tarjeta de producto completamente responsive -->
+<div class="max-w-sm mx-auto md:max-w-none">
+  <article class="bg-white rounded-lg shadow-md overflow-hidden 
+                  md:flex md:max-w-3xl lg:max-w-4xl">
+    
+    <!-- Imagen del producto -->
+    <div class="h-48 md:h-auto md:w-48 lg:w-64 flex-shrink-0">
+      <img 
+        src="producto.jpg" 
+        alt="Producto"
+        class="w-full h-full object-cover"
+      />
+    </div>
+    
+    <!-- Contenido -->
+    <div class="p-4 md:p-6 lg:p-8">
+      <!-- Categoría -->
+      <span class="text-xs md:text-sm text-blue-600 font-semibold">
+        Electrónica
+      </span>
+      
+      <!-- Título -->
+      <h3 class="mt-2 text-lg md:text-xl lg:text-2xl font-bold text-gray-800">
+        Auriculares Bluetooth Pro
+      </h3>
+      
+      <!-- Descripción -->
+      <p class="mt-2 text-sm md:text-base text-gray-600 
+                line-clamp-2 md:line-clamp-3">
+        Experimenta un sonido de calidad premium con cancelación 
+        de ruido activa y batería de larga duración.
+      </p>
+      
+      <!-- Precio y botón -->
+      <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <span class="text-2xl md:text-3xl font-bold text-gray-900">
+          $149.99
+        </span>
+        <button class="w-full sm:w-auto px-6 py-2 md:px-8 md:py-3 
+                       bg-blue-600 text-white rounded-lg 
+                       hover:bg-blue-700 transition-colors">
+          Agregar al carrito
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+</html>
