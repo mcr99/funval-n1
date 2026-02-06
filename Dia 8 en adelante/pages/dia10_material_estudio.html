@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es" id="html" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - Dark Mode</title>
+    <script src="../scripts/darkmode.js" type="module"></script>
+    <!-- Script para prevenir FOUC -->
+    <script>
+    if (localStorage.theme === 'dark' || 
+        (!('theme' in localStorage) && 
+        window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        darkMode: 'class'
+    }
+    </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 dark:text-white transition-colors duration-300 ">
+    <!-- Aquí va tu código -->
+    <header class="flex w-screen justify-between">
+        <nav class="w-screen">
+            <ul class="flex justify-evenly w-[90] bg-gray-900 text-white">
+                <li class="p-6"><a class="p-5 hover:bg-white rounded-2xl hover:text-gray-900 " href="##">Home</a></li>
+                <li class="p-6"><a class="p-5 hover:bg-white rounded-2xl hover:text-gray-900 " href="##">About</a></li>
+                <li class="p-6"><a class="p-5 hover:bg-white rounded-2xl hover:text-gray-900" href="##">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="darkMode" class="sticky top-10 right-1 w-10 h-10">
+        <div class="dark:hidden block ">🌙</div>
+        <div class="hidden dark:block">☀️</div>
+    </button>
+    <main class="flex flex-col gap-y-20">
+        <section class="flex flex-col justify-center items-center">
+            <img src="../images/user.png" alt="User" width="200px">
+            <h1 class="font-bold text-4xl p-10">Avatar Name</h1>
+            <p class="px-[10%]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus expedita sint consequuntur culpa aperiam dolorum facilis aliquid ipsa iste pariatur. At, totam nam corporis itaque iure eius perferendis natus sequi dolore rerum magni dolorem aspernatur numquam tempore neque hic voluptatem! Eius sunt quidem labore tenetur repellat, iure error deleniti? Nihil.</p>
+        </section>
+        <section class="flex justify-center">
+            <form action="" class="flex flex-col gap-2 w-[80vw]">
+                <label for="name">Name:</label>
+                <Input class="h-10 rounded-2xl p-5 border-2 border-gray-900" type="text" id="name" placeholder="Joe"></Input>
+                <label for="email">Email:</label>
+                <Input class="h-10 rounded-2xl p-5 border-2 border-gray-900" id="email" placeholder="Doe"></Input>
+                <label for="msg">Mensaje:</label>
+                <textarea class="h- rounded-2xl p-5 border-2 border-gray-900" name="mensaje" id="msg" placeholder="Escribe tu mensaje"></textarea>
+                <button class="bg-white p-5 rounded-2xl my-10 dark:text-gray-900 font-bold text-2xl hover:bg-gray-900 dark:hover:text-white dark:hover:border-white border-2 hover:text-white border-gray-900">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer class="flex justify-evenly mt-20 bg-gray-900 text-white p-1">
+        <a class="hover:bg-white p-5 rounded-2xl hover:text-gray-900" href="##">Facebook</a>
+        <a class="hover:bg-white p-5 rounded-2xl hover:text-gray-900" href="##">Instagram</a>
+        <a class="hover:bg-white p-5 rounded-2xl hover:text-gray-900" href="##">Youtube</a>
+    </footer>
+    <script src="theme-toggle.js"></script>
+</body>
+</html>
