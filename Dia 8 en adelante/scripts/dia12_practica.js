@@ -83,8 +83,65 @@ if (number > 0 ) {
 }
     */
 
-let frutas = ["manzana", "pera", "naranja"];
+// bucle que imprima los numeros de 1-10
 
-for (let i = 0; i < frutas.length; i++) {
-    console.log(`Fruta ${i + 1}: ${frutas[i]}`);
+/*
+for (let i = 1; i<=10; i++){
+    console.log(i)
 }
+
+*/
+// bucle que imprima numero de 10-1
+
+/*
+for (let x = 10; x > 0; x--){
+    console.log(x)
+}
+*/
+
+// bucle ue imprima numeros de 1-20 pero solo pares
+
+/*
+for(let i=2; i<=20; i= i+2){
+    console.log(i)
+}
+*/
+
+// bucle que imprima la suma de los primeros "n" numeros, siendo "n"  un valor ingresado por el usuario
+
+/*
+let number = parseInt(prompt("Ingresa un numero"))
+let sum = 0
+
+for (let i = 1 ; i <= number; i++) {
+    sum = sum + i
+}
+console.log (sum)
+*/
+
+// crea un bucle que imprima la tabla de multiplicar de un numero "N" que el usuario ingrese 
+
+/*
+let number = parseInt(prompt("Ingresa un numero: "))
+let mult = 0
+
+for (let i = 1; i <= 10; i++){
+    mult = number * i
+    console.log(number + " X " + i + " = " + mult )
+}
+*/
+
+// crea un bucle que me imprima las tablas de multiplicar hasta el número "n" que el usuario ingrese
+
+/*
+let number = parseInt(prompt("Ingresa un numero: "))
+let multiplying = 0
+
+for (let i = 1; i <= number; i++) {
+    multiplying = multiplying + 1
+    for (let i = 1; i <= 10; i++){
+    console.log(multiplying + " X " + i + " = " + (multiplying * i) )
+}
+}
+
+*/
