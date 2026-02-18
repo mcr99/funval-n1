@@ -22,7 +22,54 @@ Votos del partido ☀️: Daniel, Maria, Miguel, etc.
 Votos del el partido 🌎: Daniel, Maria, Miguel, etc.
 */
 
-/*
+
+const comperWinners = function (one, two, three) {
+    if (one > two){
+        if (one > three){
+            if (two > three) {
+                alert(`
+                    El ganador es partido 🍔 con: ${one.length} votos
+                    El segundo lugar es partido ☀️ con: ${two.length} votos
+                    El tercer lugar es partido 🌎con: ${three.length} votos
+                    `)
+            }else if (two < three) { // verificar empates
+                alert(`
+                    El ganador es partido 🍔 con: ${one.length} votos
+                    El segundo lugar es partido 🌎 con: ${three.length} votos
+                    El tercer lugar es partido ☀️ con: ${two.length} votos
+                    `)
+            }
+        }else { // 
+            alert(`
+                El ganador es partido 🌎 con: ${three.length} votos
+                El segundo lugar es partido 🍔 con: ${one.length} votos
+                El tercer lugar es partido ☀️ con: ${two.length} votos
+                `)
+        }
+    }else if (one < two) {
+        if(two > three) {
+            if(three > one){
+            alert(`
+                El ganador es partido ☀️ con: ${two.length} votos
+                El segundo lugar es partido 🌎 con: ${three.length} votos
+                El tercer lugar es partido 🍔 con: ${one.length} votos
+                `)
+            }else { // 
+            alert(`
+                El ganador es partido ☀️ con: ${two.length} votos
+                El segundo lugar es partido 🍔 con: ${one.length} votos
+                El tercer lugar es partido 🌎con: ${three.length} votos
+                `)
+            }
+        }
+    } else { // 
+        alert(`
+            El ganador es partido 🌎 con: ${three.length} votos
+            El segundo lugar es partido ☀️ con: ${two.length} votos
+            El tercer lugar es partido 🍔 con: ${one.length} votos
+            `)
+    }
+}
 
 let insertVote
 
@@ -58,6 +105,7 @@ do {
                 alert(`Opcion Incorrecta: `)
             }
     }else if (insertVote === 2){
+        comperWinners(option1, option2, option3)
         alert(`
             Los votos de partido 🍔 son: ${option1}
             Los votos de partido ☀️ son: ${option2}
@@ -68,9 +116,9 @@ do {
     }
 } while (insertVote !== 2)
 
-*/
 
 
+/*
 let levelList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 let actualLevel = 1
 
@@ -80,4 +128,4 @@ do {
         `))
 } while (newLevel !==0)
 
-
+*/
