@@ -177,13 +177,14 @@ function calculateTotalValue(product) {
 
 console.log(calculateTotalValue(storeProducts))
 
-/* 
+// 4 - Obtener todos los productos de una categoría.return [{}]
 
-4-Obtener todos los productos de una categoría.return [{}]
-5-Obtener el nombre del producto más caro. return string
-/
 
-/ 
+
+// 5-Obtener el nombre del producto más caro. return string
+
+
+/*
 6-Obtener los 3 productos mejor valorados. return [{}]
 7-Calcular el promedio de precios por categoría. 
 [
